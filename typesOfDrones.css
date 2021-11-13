@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Raleway:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.1rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+.back-btn{
+    margin-top: 0;
+    margin-left:900px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #000;
+    position: relative;
+    transition:  0.5s;
+    margin-bottom: 200px;
+}
+.back-btn span{
+    position: absolute;
+    background: #000;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+.back-btn:hover span{
+    width: 100%;
+}
+.back-btn:hover{
+    color:#fff;
+}
+.buttonLink {
+    color: #000;
+    border: 3px solid black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all .3s;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.buttonLink:hover {
+    color: #fff;
+    background-color: black;
+}
+
+.socialMediaDiv {
+    margin-top: 30px;
+}
+
+.socialMediaDiv .socialMedia {
+    margin: 0 25px;
+    font-size: 1.5rem;
+    color: #000;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all .3s;
+}
+
+.socialMediaDiv .socialMedia:hover {
+    color: white;
+    background-color: black;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 50px;
+    font-weight: 400;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    transition: all .3s;
+}
+
+ul li a:hover {
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.5px;
+}
+
+ul li .specialNavBarItem {
+    
+    padding: 15px 20px;
+    border-radius: 100px;
+    transition: all .3s;
+}
+
+ul li .specialNavBarItem:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(238, 69, 120);
+}
+
+.specialText {
+    font-weight: 700;
+    background: -webkit-linear-gradient(left, rgb(82, 72, 226), rgb(238, 69, 120));
+    -webkit-text-fill-color: transparent;
+}
+
+/* Header */
+
+header {
+    padding: 20px;
+    height: 100vh;
+}
+
+header .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+header #landingPageContent {
+    text-align: center;
+    margin-top: 100px;
+}
+
+header #landingPageContent .subTitle {
+    font-size: 1.6rem;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    width: 60%;
+    margin: auto;
+}
+/* media queries */
+/* Main */
+
+main {
+    text-align: center;
+    width: 75%;
+    margin: 50px auto;
+}
+main{
+    display: block;
+}
+main p {
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 20px;
+}
+main .section {
+    margin: 100px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+.footerNavBar ul li{
+    list-style: none;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+}
+footer #contactMe .footerNavBar a {
+    color: rgb(255, 255, 255);
+}
